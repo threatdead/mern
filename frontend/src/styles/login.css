@@ -1,0 +1,89 @@
+@import "@fontsource/poppins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fffff8;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header styling */
+.login-header {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.login-header h1 {
+
+    font-weight: 600; 
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    font-size: 16px;
+    font-weight: 300; 
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.login-form label {
+    align-self: flex-start;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #4A5759;
+}
+
+.login-container button{
+    width: 131px;
+    padding: 10px;
+    margin-top: 20px;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #4A5759;
+    background-color: #4A5759;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+img {
+    padding-right: 10px;
+}
