@@ -66,6 +66,34 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
+.profile-menu {
+    position: relative;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+  
+  .profile-dropdown button {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .profile-dropdown button:hover {
+    background-color: #f2f2f2;
+  }
+  
 
 /* Dark Mode Styles */
 

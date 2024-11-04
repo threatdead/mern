@@ -1,54 +1,67 @@
+/* claims.css */
+
 .claim-table {
-    width: 90%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    text-align: left;
-  }
-  
-  .claim-table th, .claim-table td {
-    padding: 12px;
-    border: 1px solid #ddd;
-  }
-  
-  .claim-table th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-  }
-  
-  .status {
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-weight: bold;
-    color: #fff;
-  }
-  
-  .status.pending {
-    background-color: #ffc107; /* Yellow */
-    color: #856404;
-  }
-  
-  .status.approved {
-    background-color: #28a745; /* Green */
-    color: #fff;
-  }
-  
-  .status.denied {
-    background-color: #dc3545; /* Red */
-    color: #fff;
-  }
-  
-  button {
-    padding: 5px 10px;
-    margin: 0 5px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.claim-table th, .claim-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.claim-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Status styling */
+.claims-status {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.claims-status.pending { background-color: #ffc107; color: #856404; }
+.claims-status.approved { background-color: #28a745; color: #fff; }
+.claims-status.denied { background-color: #dc3545; color: #fff; }
+
+/* Button styling */
+.claims-edit-button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.claims-edit-button:hover {
+  background-color: #0056b3;
+}
+
+.claims-delete-button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.claims-delete-button:hover {
+  background-color: #a71d2a;
+}
+
+h2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,14 +1,6 @@
-/* Container styling */
-*{
-    font-family: Poppins;
-}
-/* Main container styling */
-h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-form{
+/* submit.css */
+
+.submit-form-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -21,8 +13,7 @@ form{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Section header styling */
-form h2 {
+.submit-form-header {
     grid-column: span 2;
     text-align: center;
     font-size: 24px;
@@ -31,25 +22,14 @@ form h2 {
     margin-bottom: 10px;
 }
 
-form p {
-    grid-column: span 2;
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* Label styling */
-form label {
+.submit-form-label {
     font-weight: 500;
     color: #333;
     margin-top: 10px;
     font-size: 14px;
 }
 
-/* Input and select styling */
-form input,
-form select {
+.submit-form-input, .submit-form-select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -59,14 +39,7 @@ form select {
     font-size: 14px;
 }
 
-form input[type="text"],
-form input[type="date"],
-form select {
-    grid-column: span 2;
-}
-
-/* Button styling */
-form button {
+.submit-button {
     grid-column: span 2;
     padding: 12px;
     font-size: 16px;
@@ -79,14 +52,8 @@ form button {
     margin-top: 20px;
     transition: background-color 0.3s ease;
 }
+.submit-button:hover { background-color: #3b4648; }
 
-form button:hover {
-    background-color: #3b4648;
-}
-
-
-
-/* Align single-column sections to the left */
-form .single-column {
-    grid-column: span 2;
+.dark-mode .submit-form-header {
+    color: #ffffff; /* Dark mode color */
 }
