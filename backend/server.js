@@ -26,5 +26,5 @@ if(process.env.NODE_ENV === 'production') {
 }
 app.listen(process.env.PORT || 5000, () => {
     connectDB();
-  console.log(`Server is running on port http://localhost:${process.env.PORT}/login`);
+  console.log(`Server is running on port http://localhost:${process.env.PORT}`);
 });
