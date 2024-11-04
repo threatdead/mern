@@ -1,0 +1,92 @@
+/* Container styling */
+*{
+    font-family: Poppins;
+}
+/* Main container styling */
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section header styling */
+form h2 {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+form p {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+form label {
+    font-weight: 500;
+    color: #333;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Input and select styling */
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form select {
+    grid-column: span 2;
+}
+
+/* Button styling */
+form button {
+    grid-column: span 2;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4A5759;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3b4648;
+}
+
+
+
+/* Align single-column sections to the left */
+form .single-column {
+    grid-column: span 2;
+}

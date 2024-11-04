@@ -23,13 +23,13 @@ const Register = () => {
             <label for="last-name">Last Name</label>
             <input type="text" id="last-name" placeholder="Last name" />
           </div>
+          <div class="register-footer">
+            <p>
+              Already have an Account? <Link to="/login">Login</Link>
+            </p>
+          </div>
+          <button>Register</button>
         </form>
-        <div class="register-footer">
-          <p>
-            Already have an Account? <Link to="/login">Login</Link>
-          </p>
-        </div>
-        <button>Register</button>
       </div>
     </div>
   );

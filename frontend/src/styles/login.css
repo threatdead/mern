@@ -17,7 +17,6 @@
     background-color: #fffff8;
     font-family: 'Poppins', sans-serif;
 }
-
 /* Header styling */
 .login-header {
     text-align: center;
@@ -63,9 +62,11 @@
     border-radius: 20px;
     border: 1px solid #4A5759;
 }
-
-.login-container button{
-    width: 131px;
+.login-form button {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center text within button */
+    width: 100%; /* Make button full width */
     padding: 10px;
     margin-top: 20px;
     outline: none;
@@ -75,7 +76,9 @@
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: Poppins;
 }
+
 
 .login-footer{
     display: flex;
