@@ -16,7 +16,6 @@ connectDB();
 // CORS configuration
 const corsOptions = {
   origin: process.env.FRONT_END_URL || 'http://localhost:5000', // replace with your frontend URL in production
-  credentials: true, // if using cookies for auth
 };
 app.use(cors(corsOptions));
 
