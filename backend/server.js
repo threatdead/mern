@@ -17,12 +17,11 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/claims', claimRoutes);
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "frontend")));
+  app.use(express.static(path.join(__dirname, "frontend", "dist")));
 
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "frontend", "index.html"));
+    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
   });
-  
 }
 app.listen(process.env.PORT || 5000, () => {
     connectDB();
